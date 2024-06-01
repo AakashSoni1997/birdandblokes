@@ -1,0 +1,76 @@
+.event-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.event-details h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.event-details p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.event-details form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-details label {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #444;
+}
+
+.event-details input {
+    padding: 10px;
+    font-size: 1em;
+    margin-right: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.event-details button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.event-details button:hover {
+    background-color: #0056b3;
+}
+
+.event-details .success-message {
+    margin-top: 20px;
+    color: green;
+    font-size: 1.2em;
+}
+
+.event-details .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.event-details .back-link:hover {
+    background-color: #0056b3;
+}

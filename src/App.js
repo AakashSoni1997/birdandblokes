@@ -1,27 +1,14 @@
-import { Container } from "@mui/material";
-import { Footer, Header } from "./Components/common";
-import HeaderInfo from "./Components/HeaderInfo";
-import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import theme from './theme';
+import EventDetails from "./components/EventDetails";
+import EventList from "./components/EventList";
+import events from "../src/components/common/events";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Container maxWidth="xl">
-        <HeaderInfo />
-        <Header />
-        {/* Small Pleasures */}
-        {/* Time for giving */}
-        {/* Never Pay Retail Again! */}
-        {/* Card with the price */}
-        {/* SWOONING FOR SWIM SEASON */}
-        {/* SIGN UP NEWSLETTER */}
-        {/* Social media cards */}
-        {/* <Footer /> */}
-      </Container>
-    </ThemeProvider>
+    <Routes>
+      <Route path="/" element={<EventList events={events} />} />
+      <Route path="/event/:id" Component={EventDetails} />
+    </Routes>
   );
 }
 
