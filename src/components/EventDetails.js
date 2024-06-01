@@ -102,9 +102,11 @@ function EventDetails() {
   };
 
   const handleTicketCounterChange = (val) => {
-    setAvailableTickets(val);
+    if (val > 0) {
+      setAvailableTickets(val);
+    }
   };
-
+  const remainingTicketCount = Math.max(eventDetails?.availableTickets - availableTickets, 0)
 
   return (
     <EventDetailsContainer>
@@ -114,7 +116,7 @@ function EventDetails() {
         {eventDetails.date} at {eventDetails.time}
       </EventInfo>
       <EventInfo>Venue: {eventDetails.venue}</EventInfo>
-      <EventInfo>Tickets Available: {eventDetails?.availableTickets - availableTickets}</EventInfo>
+      <EventInfo>Tickets Available: {remainingTicketCount}</EventInfo>
       <Form onSubmit={handleBooking} >
         <FormLabel>Number of Tickets:</FormLabel>
         <TextField
