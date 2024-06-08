@@ -2,6 +2,7 @@ import { Grid, Typography } from '@mui/material'
 import React from 'react'
 
 const HeaderInfo = () => {
+
   return (
     <Grid sx={{ background: "#EEB78E", display: "flex", justifyContent: "center", p: 1 }}>
       <Typography sx={{
