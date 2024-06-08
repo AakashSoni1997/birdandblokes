@@ -1,14 +1,13 @@
-import { Grid } from '@mui/material'
-import React from 'react'
-import NeverPayRetailImage from "../assets/images/NeverPayRetail.svg"
-
+import { Grid } from "@mui/material";
+import React from "react";
+import NeverPayRetailImage from "../assets/images/NeverPayRetail.svg";
 
 const NeverPayRetailSection = () => {
   return (
     <Grid p={4}>
-      <img src={NeverPayRetailImage} height={"100%"} width={"100%"} />
+      <img src={NeverPayRetailImage} height={"100%"} width={"100%"} alt="pic" />
     </Grid>
-  )
-}
+  );
+};
 
-export default NeverPayRetailSection
+export default NeverPayRetailSection;
